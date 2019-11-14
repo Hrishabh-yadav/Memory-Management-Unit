@@ -26,3 +26,8 @@ This algorithm implements the Page Based Memory allocation which has features of
 ## How is this implemented?
 
 Each entry of the Page Table is of Long Long Integer type. Each of these is divided into 4 parts of 15 bit each. The Page tables are implemented like Trees, and the last level of the tree consists of the actual pages allocated to the process. Whenever we need to work with functions like call_process, deallocate and translate_address, DFS is used to traverse the Tree.
+
+## File descriptions:
+* memory_manage.cpp   -   Supports multi-level paging
+* mmu_2.cpp           -   Supports 2-level paging
+* dryRun.txt          -   Sample Output on running mmu_2.cpp

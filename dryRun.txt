@@ -1,0 +1,265 @@
+$ g++ mmu_2.cpp
+$ ./a.out
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+1
+Enter processID and numberOfPages: 1 12
+
+[I] Alloc done
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+1
+Enter processID and numberOfPages: 2 20
+
+[I] Alloc done
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+5
+
+[I] PROCESS = 1 and Pages Allotted: 12
+pageTable = 1:
+	 1  2  3  4  5  6  7  8 
+pageTable = 2:
+	 9 10 11 12 
+
+[I] PROCESS = 2 and Pages Allotted: 20
+pageTable = 3:
+	13 14 15 16 17 18 19 20 
+pageTable = 4:
+	21 22 23 24 25 26 27 28 
+pageTable = 5:
+	29 30 31 32 
+
+[I] PROCESS = 3 and Pages Allotted:  0
+
+[I] PROCESS = 4 and Pages Allotted:  0
+
+[I] PROCESS = 5 and Pages Allotted:  0
+
+[I] PROCESS = 6 and Pages Allotted:  0
+
+[I] PROCESS = 7 and Pages Allotted:  0
+
+[I] PROCESS = 8 and Pages Allotted:  0
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+2
+Enter processID and pageNumber: 1 2
+
+[I] Page found in main memory... Fetch Success!
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+2
+Enter processID and pageNumber: 1 13
+
+[E] Invalid Page access. Page belongs to a different process!
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+2
+Enter processID and pageNumber: 2 34
+
+[I] Page not in main memeory... Using LRU algorithm to swap
+Here, page = 12, thatProcessID = 1, pageTable = 2, index = 0
+PageNumber = 33
+[I] Page fetched from secondary memory. Recentness updated!
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+5
+
+[I] PROCESS = 1 and Pages Allotted: 12
+pageTable = 1:
+	 1  2  3  4  5  6  7  8 
+pageTable = 2:
+	 9 10 11 12 
+
+[I] PROCESS = 2 and Pages Allotted: 20
+pageTable = 3:
+	34 14 15 16 17 18 19 20 
+pageTable = 4:
+	21 22 23 24 25 26 27 28 
+pageTable = 5:
+	29 30 31 32 
+
+[I] PROCESS = 3 and Pages Allotted:  0
+
+[I] PROCESS = 4 and Pages Allotted:  0
+
+[I] PROCESS = 5 and Pages Allotted:  0
+
+[I] PROCESS = 6 and Pages Allotted:  0
+
+[I] PROCESS = 7 and Pages Allotted:  0
+
+[I] PROCESS = 8 and Pages Allotted:  0
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+1
+Enter processID and numberOfPages: 3 7 
+
+[I] Alloc done
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+5
+
+[I] PROCESS = 1 and Pages Allotted: 12
+pageTable = 1:
+	 1  2  3  4  5  6  7  8 
+pageTable = 2:
+	 9 10 11 12 
+
+[I] PROCESS = 2 and Pages Allotted: 20
+pageTable = 3:
+	34 14 15 16 17 18 19 20 
+pageTable = 4:
+	21 22 23 24 25 26 27 28 
+pageTable = 5:
+	29 30 31 32 
+
+[I] PROCESS = 3 and Pages Allotted:  7
+pageTable = 6:
+	35 36 37 38 39 40 41 
+
+[I] PROCESS = 4 and Pages Allotted:  0
+
+[I] PROCESS = 5 and Pages Allotted:  0
+
+[I] PROCESS = 6 and Pages Allotted:  0
+
+[I] PROCESS = 7 and Pages Allotted:  0
+
+[I] PROCESS = 8 and Pages Allotted:  0
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+3
+Enter processID: 3
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+5
+
+[I] PROCESS = 1 and Pages Allotted: 12
+pageTable = 1:
+	 1  2  3  4  5  6  7  8 
+pageTable = 2:
+	 9 10 11 12 
+
+[I] PROCESS = 2 and Pages Allotted: 20
+pageTable = 3:
+	34 14 15 16 17 18 19 20 
+pageTable = 4:
+	21 22 23 24 25 26 27 28 
+pageTable = 5:
+	29 30 31 32 
+
+[I] PROCESS = 3 and Pages Allotted:  0
+
+[I] PROCESS = 4 and Pages Allotted:  0
+
+[I] PROCESS = 5 and Pages Allotted:  0
+
+[I] PROCESS = 6 and Pages Allotted:  0
+
+[I] PROCESS = 7 and Pages Allotted:  0
+
+[I] PROCESS = 8 and Pages Allotted:  0
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+	Choose among:
+	[1] - Allocate Pages
+	[2] - Fetch Pages
+	[3] - Deallocate Pages
+	[4] - Print specific Process Page Table
+	[5] - Print All Page Tables
+	[6] - Exit
+6
+See ya!
+
+= - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - = - =
+
+$ 
